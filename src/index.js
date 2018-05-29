@@ -40,10 +40,20 @@ const refreshGrid = () => {
       ".picture-item-delete-button"
     );
 
+    const updateButtonElement = clone.querySelector(
+      ".picture-item-update-button"
+    );
+
     // FIXME: use your functions to delete the selected element
     deleteButtonElement.addEventListener("click", () => 
     {
       remove(i);
+      refreshGrid();
+    });
+
+    updateButtonElement.addEventListener("click", () => 
+    {
+      update(i);
       refreshGrid();
     });
 
