@@ -1,6 +1,7 @@
 import list from "./actions/list";
 import add from "./actions/add";
 import remove from "./actions/remove";
+import update from "./actions/update";
 
 const picturesGridElement = document.getElementById("pictures-grid");
 const pictureInputElement = document.getElementById("picture-url-input");
